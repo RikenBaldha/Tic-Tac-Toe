@@ -1,0 +1,273 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.cursor{
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  transition: all linear 0.2s;
+}
+nav {
+  color: white;
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0px 20px;
+  font-size: 25px;
+}
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+}
+.boxtext{
+  transition: all;
+  font-size: 30px;
+  font-weight: 10;
+  transition-duration: 1.5s; 
+}
+.box {
+  border: 3px solid black;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.br-0 {
+  border-right: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+#gameInfo {
+  margin: 20px;
+}
+.imgbox img {
+  display: none;
+}
+.info {
+  margin-top: 24px;
+  margin-left: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+h1 {
+  margin: 13px;
+  padding: 14px;
+}
+#reset {
+  color: black;
+  margin: 25px;
+  padding: 9px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 3px solid black;
+}
+#abc {
+  font-size: 52px;
+  position: absolute;
+  left: 33px;
+  top: 70px;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+#hi{
+  display: none;
+}
+.winning-box {
+  background-color: yellow; 
+  color: black; 
+}
+
+@media only screen and (max-width: 426px) {
+  .box {
+    border: 3px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxtext{
+    transition: all;
+    font-size: 20px;
+    font-weight: 100;
+    transition-duration: 1.5s; 
+  }
+  .gameContainer {
+    position: absolute;
+    margin-top: 71px;
+  }
+  .container {
+    display: grid;
+    width: 100%;
+    margin-left: 70px;
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+  #gameInfo {
+    position: absolute;
+    margin-left: -97px;
+    margin-top: 190px;
+  }
+  h1 {
+    font-size: 25px;
+    left: -100px;
+    margin-right: -300px;
+    position: absolute;
+    top: 85px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #reset {
+    display: none;
+  }
+  #hi{
+    display: block;
+    color: black;
+    font-weight: 500;
+  }
+  .bt-0 {
+    border-top: 0;
+  }
+  .bl-0 {
+    border-left: 0;
+  }
+  .br-0 {
+    border-right: 0;
+  }
+  .bb-0 {
+    border-bottom: 0;
+  }
+  #abc {
+    left: 5px;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 9px 12px;
+    top: 100px;
+  }
+  #hi {
+    margin: 9px;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 3px solid black;
+    width: 33px;
+  }
+  .cursor{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 427px) and (max-width: 769px){
+  .box {
+    border: 3px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxtext{
+    transition: all;
+    font-size: 20px;
+    font-weight: 100;
+    transition-duration: 1.5s; 
+  }
+  .gameContainer {
+    position: absolute;
+    margin-top: 62px;
+  }
+  .container {
+    display: grid;
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 16vw);
+    grid-template-rows: repeat(3, 16vw);
+  }
+  #gameInfo {
+    position: absolute;
+    margin-left: -97px;
+    margin-top: 190px;
+  }
+  h1 {
+    font-size: 25px;
+    left: -33px;
+    margin-right: -300px;
+    position: absolute;
+    top: 184px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #reset {
+    display: none;
+  }
+  #hi{
+    display: block;
+    color: black;
+    font-weight: 500;
+  }
+  .bt-0 {
+    border-top: 0;
+  }
+  .bl-0 {
+    border-left: 0;
+  }
+  .br-0 {
+    border-right: 0;
+  }
+  .bb-0 {
+    border-bottom: 0;
+  }
+  #abc {
+    left: 5px;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 9px 12px;
+    top: 100px;
+  }
+  #hi {
+    margin: 9px;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 3px solid black;
+    width: 33px;
+  }
+  .cursor{
+    display: none;
+  }
+}
