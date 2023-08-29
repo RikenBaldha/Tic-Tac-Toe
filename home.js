@@ -81,7 +81,7 @@ Array.from(box).forEach(element => {
     var boxtext = element.querySelector(".boxtext")
     element.addEventListener("click", function () {
         
-        if (boxtext.innerHTML === "") {
+        if (boxtext.innerHTML === "" && !gameover) {
             abc.play();
             boxtext.innerHTML = turn;
             turn = changeturn()
