@@ -1,0 +1,497 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+html{
+  font-size: 66.5%;
+}
+body{
+  /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+  background-color:#8ceedf;
+}
+
+.cursor{
+  height: 3.0rem;
+  width: 3.0rem;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  transition: all linear 0.2s;
+}
+nav {
+  color: white;
+  background-color: #000;
+  height: 6.3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0rem 2.0rem;
+  font-size: 2.5rem;
+}
+#dark{
+  cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin-left: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 19rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+#mo{
+  cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin-left: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 33rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+/* #mo::after{
+  background-color: yellow;
+} */
+#mf{
+  cursor: pointer;
+    font-size: 2rem;
+    margin-left: 3rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 44rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10.0rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 16rem);
+  grid-template-rows: repeat(3, 16rem);
+}
+.boxtext{
+  transition: all;
+  font-size: 3.0rem;
+  font-weight: 10;
+  transition-duration: 1.5s; 
+}
+.box {
+  border: .4rem solid #000;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+} 
+.box:hover {
+  background-color: #c5fff6;
+  cursor: pointer;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.br-0 {
+  border-right: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+#gameInfo {
+  margin: 2.0rem;
+}
+.imgbox img {
+  display: none;
+}
+.info {
+  margin-top: 2.4rem;
+  margin-left: 4.8rem;
+  font-weight: 500;
+  font-size: 2.0rem;
+  padding: 1.0rem;
+  background-color: black;
+  color: white;
+  border-radius: 1.0rem;
+}
+h1 {
+  margin: 13rem;
+  padding: 14rem;
+}
+#play {
+  color: #000;
+  margin: 2.5rem;
+  padding: .9rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  border: .3rem solid #000;
+  cursor: pointer;
+}
+#abc {
+  font-size: 5.2rem;
+  position: absolute;
+  left: 3.3rem;
+  top: 7.0rem;
+  padding: 1.2rem;
+  background-color: #000;
+  color: white;
+  border-radius: 1.0rem;
+}
+.imp{
+  margin-top: 2x;
+}
+.x{
+  margin-top: 1.5rem;
+  padding: .4rem;
+  margin-left: 4.1rem;
+  color: #000;
+}
+.o{
+  margin-top: 0rem;
+  padding: .5rem;
+  margin-left: 3.9rem;
+  color: #000;
+}
+.d{
+  margin-top: 0rem;
+  padding: .5rem;
+  margin-left: 3.9rem;
+  color: #000;  
+  
+}
+#reset{
+  display: inline-block;
+  position: absolute;
+  top: 18.0rem;
+  left: 4.1rem;
+  padding: 1.0rem;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 1.0rem;
+}
+.winning-box {
+  background-color: yellow; 
+  color: #000; 
+}
+
+@media only screen and (max-width:500px){
+  html{
+    font-size: 35%;
+  }
+  
+  .gameContainer {
+    
+    display:grid;
+    justify-content: center;
+    margin-top: 22rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0rem 1rem;
+  font-size: 2.5rem;
+}
+.boxtext{
+  font-size: 1rem;
+}
+#gameInfo {
+  margin: 2.0rem;
+  margin-top:6rem;
+}
+.x{
+  font-size: 4rem;
+  margin-top: 2.5rem;
+  padding: .4rem;
+  margin-left: 4.1rem;
+  color: #000;
+}
+.o{
+  font-size: 4rem;
+  margin-top: 0rem;
+  padding: .5rem;
+  margin-left: 3.9rem;
+  color: #000;
+}
+.d{
+  font-size: 4rem;
+  margin-top: 0rem;
+  padding: .5rem;
+  margin-left: 3.9rem;
+  color: #000;  
+  
+}
+#play {
+
+  font-size: 4rem;
+  color: #000;
+  margin: 2.5rem;
+  padding: .9rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  border: .3rem solid #000;
+  cursor: pointer;
+}
+#dark{
+  cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin-left: 0.7rem;
+    position: absolute;
+    top: 1rem;
+    left: 19rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+#mo{
+  cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 33rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+/* #mo::after{
+  background-color: yellow;
+} */
+#mf{
+  cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2.7rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 44rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+#abc{
+  position: absolute;
+  top: 17rem;
+}
+#reset{
+  font-size: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 7rem;
+  left: 4.1rem;
+  padding: 1.0rem;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 1.0rem;
+}
+}
+
+@media only screen and (min-width:499px) and (max-width:682px){
+  html{
+    font-size: 45%;
+  }
+  nav {
+    color: white;
+    background-color: #000;
+    height: 6.0rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .boxtext{
+    font-size: 1rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 18rem);
+    grid-template-rows: repeat(3, 18rem);
+  }
+  .gameContainer {
+    display: flex;
+    /* margin: 10; */
+    justify-content: center;
+    margin-top: 17rem;
+}
+#play {
+
+  font-size: 4rem;
+  color: #000;
+  margin: 2.5rem;
+  padding: .9rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  border: .3rem solid #000;
+  cursor: pointer;
+}
+#reset{
+  font-size: 5rem;
+  display: inline-block;
+  position: absolute;
+  top: 7rem;
+  left: 56rem;
+  padding: 1.0rem;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 1.0rem;
+}
+.x{
+  font-size: 4rem;
+  margin-top: 2.5rem;
+  padding: .4rem;
+  margin-left: 4.1rem;
+  color: #000;
+}
+.o{
+  font-size: 4rem;
+  margin-top: 0rem;
+  padding: .5rem;
+  margin-left: 3.9rem;
+  color: #000;
+}
+.d{
+  font-size: 4rem;
+  margin-top: 0rem;
+  padding: .5rem;
+  margin-left: 3.9rem;
+  color: #000;  
+  
+}
+
+}
+@media only screen and (min-width:681px) and (max-width:769px){
+  html{
+    font-size: 45%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 16.5rem);
+    grid-template-rows: repeat(3, 16.5rem);
+  }
+  .boxtext{
+    transition: all;
+    font-size: 3.0rem;
+    font-weight: 10;
+    transition-duration: 2s; 
+  }
+ 
+  #play {
+
+    font-size: 4rem;
+    color: #000;
+    margin: 2.5rem;
+    padding: .9rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    border: .3rem solid #000;
+    cursor: pointer;
+  }
+  #reset{
+    font-size: 5rem;
+    display: inline-block;
+    position: absolute;
+    top: 7rem;
+    left: 63rem;
+    padding: 1.0rem;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.0rem;
+  }
+  .x{
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    padding: .4rem;
+    margin-left: 4.1rem;
+    color: #000;
+  }
+  .o{
+    font-size: 4rem;
+    margin-top: 0rem;
+    padding: .5rem;
+    margin-left: 3.9rem;
+    color: #000;
+  }
+  .d{
+    font-size: 4rem;
+    margin-top: 0rem;
+    padding: .5rem;
+    margin-left: 3.9rem;
+    color: #000;  
+    
+  }
+}
+@media only screen and (min-width:768px){
+  html{
+    font-size: 55%;
+  }
+  .boxtext{
+    font-size: 2rem;
+  }
+  #play {
+
+    font-size: 4rem;
+    color: #000;
+    margin: 2.5rem;
+    padding: .9rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    border: .3rem solid #000;
+    cursor: pointer;
+  }
+  #reset{
+    font-size: 5rem;
+    display: inline-block;
+    position: absolute;
+    top: 7rem;
+    left: 63rem;
+    padding: 1.0rem;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.0rem;
+  }
+  .x{
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    padding: .4rem;
+    margin-left: 4.1rem;
+    color: #000;
+  }
+  .o{
+    font-size: 4rem;
+    margin-top: 0rem;
+    padding: .5rem;
+    margin-left: 3.9rem;
+    color: #000;
+  }
+  .d{
+    font-size: 4rem;
+    margin-top: 0rem;
+    padding: .5rem;
+    margin-left: 3.9rem;
+    color: #000;  
+    
+  }
+
+}
